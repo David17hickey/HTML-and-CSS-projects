@@ -1,0 +1,163 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a; /* Dark background for space theme */
+    color: #fff; /* White text for contrast */
+}
+
+/* Navigation Styles */
+.wrap {
+    background-color: #1a1a1a; /* Slightly lighter for contrast */
+    padding: 10px 0;
+}
+
+.menu-container {
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #00bfff; /* Light blue on hover */
+}
+
+/* Home Section Styles */
+#home {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.head-main {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+/* Gallery Styles */
+#gallery {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photo-container {
+    margin: 10px;
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 200px; /* Adjust the size of images */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.photo:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.photo:hover .photo-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+/* Contact Section Styles */
+#contact {
+    background-color: #1a1a1a;
+    padding: 50px 0;
+}
+
+.heading-padding {
+    padding: 20px 0;
+}
+
+.reservation {
+    text-align: center;
+}
+
+.reservation h2 {
+    margin: 20px 0;
+}
+
+.form-rsvp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rsvp {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-spacer {
+    margin: 20px 0;
+}
+
+.submit input {
+    background-color: #00bfff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit input:hover {
+    background-color: #0080ff; /* Darker blue on hover */
+}
+
+/* Footer Styles */
+#footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1a1a1a;
+}
